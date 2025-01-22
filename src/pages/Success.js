@@ -16,7 +16,7 @@ const Success = () => {
 
         // Make an API call to verify payment and save the order
         const response = await fetch(
-          `http://localhost:8080/api/verify-payment?session_id=${sessionId}`,
+          `https://backend-ecommerce-eight-xi.vercel.app/api/verify-payment?session_id=${sessionId}`,
           {
             method: "GET",
             headers: {
